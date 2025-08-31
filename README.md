@@ -29,25 +29,26 @@ The environment is design to test Mirai botnet in an isolated LAN environment.
 - Host 5 Different Virtual Machines (VMs), 4 in Ubuntu 22.04 and 1 in Kali Linux (latest version is fine)
 - Configure all with "Internal Network" named "inet", with optional "NAT" to install updates
 ![alt text](https://github.com/ausyen20/mirai-botnet/blob/main/assets/experiment.png?raw=true)
+
 1. VM1 - C&C & MySQL Servers
 2. VM2 - DNS server
 3. Bot - Infected with Mirai program
 4. Vulnerable Machine - Target to attack/infect
 5. Kali Linx - For monitoring the network traffic
 
-The experiment is based VM
-
 ## Requirements 
-(Before building and running this code, ensure you have the following installed on VM2):
-1. Use "sudo apt install ....":
+
+1. All VMs --> sudo apt update && sudo apt upgrade
+
+2. (Before building and running this code, ensure you have the following installed on VM2):
+Use "sudo apt install ....":
 - gcc - GNU Compiler Collection
 - golang - Go programming language
 - electric-fence - Memory debugging library
 - mysql-server - MySQL database server
 - mysql-client - MySQL database client
-2. Run tools/db.sql
-  mysql -u root -p <enter your password>
-  source db.sql;
+
+Steps: Follow this https://github.com/brcnitk/Mirai/blob/main/README.md
 
 
 
