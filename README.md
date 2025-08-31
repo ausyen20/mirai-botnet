@@ -1,6 +1,6 @@
 Mirai Botnet
 
-* This is strictly for Educational & Research purposes *
+( This is strictly for Educational & Research purposes! )
 
 ## Mirai Botnet – Overview
 
@@ -28,7 +28,7 @@ The environment is design to test Mirai botnet in an isolated LAN environment.
 - Virtualbox 7.0
 - Host 5 Different Virtual Machines (VMs), 4 in Ubuntu 22.04 and 1 in Kali Linux (latest version is fine)
 - Configure all with "Internal Network" named "inet", with optional "NAT" to install updates
-
+![alt text](https://github.com/ausyen20/mirai-botnet/blob/main/assets/experiment.png?raw=true)
 1. VM1 - C&C & MySQL Servers
 2. VM2 - DNS server
 3. Bot - Infected with Mirai program
