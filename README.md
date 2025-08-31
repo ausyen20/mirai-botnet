@@ -1,6 +1,6 @@
 Mirai Botnet
 
-* This is strictly for Educational & Research purposes
+* This is strictly for Educational & Research purposes *
 
 ## Mirai Botnet – Overview
 
@@ -29,9 +29,16 @@ The environment is design to test Mirai botnet in an isolated LAN environment.
 - Host 5 Different Virtual Machines (VMs), 4 in Ubuntu 22.04 and 1 in Kali Linux (latest version is fine)
 - Configure all with "Internal Network" named "inet", with optional "NAT" to install updates
 
-## Topology:
+1. VM1 - C&C & MySQL Servers
+2. VM2 - DNS server
+3. Bot - Infected with Mirai program
+4. Vulnerable Machine - Target to attack/infect
+5. Kali Linx - For monitoring the network traffic
 
-Requirements (Before building and running this code, ensure you have the following installed on VM2 (except from Kali):
+The experiment is based VM
+
+## Requirements 
+(Before building and running this code, ensure you have the following installed on VM2):
 1. Use "sudo apt install ....":
 - gcc - GNU Compiler Collection
 - golang - Go programming language
@@ -47,5 +54,7 @@ Requirements (Before building and running this code, ensure you have the followi
 Credits to:
 1. https://github.com/jgamblin/Mirai-Source-Code/ - Jerry Gamblin 
 2. https://github.com/lejolly/Mirai-Source-Code/ - Lejolly (Joshua Lee) --> For attack-instructions & scanner-and-loader-instructions 
-3. https://github.com/brcnitk/Mirai/ - Dr. B R Chandavarkar
-4. https://github.com/Glowman554/mirai/ - Glowman554 
+3. https://github.com/brcnitk/Mirai/ - Dr. B R Chandavarkar --> Setup (You should follow this to setup)
+4. https://github.com/Glowman554/mirai/ - Glowman554 --> Setup 
+5. https://github.com/ruCyberPoison/-Mirai-Iot-BotNet/ - ruCyberPoison --> Overall Setup (similar)
+
